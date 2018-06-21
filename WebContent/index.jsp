@@ -4,6 +4,7 @@
 	pageEncoding="UTF-8"%>
 
 <%
+
   String root = request.getContextPath();
 %>
 
