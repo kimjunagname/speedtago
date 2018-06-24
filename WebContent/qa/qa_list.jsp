@@ -131,7 +131,6 @@
 								<td>5554</td>
 							</tr>
 						</table>
-						<div align="right"><a href="<%=root%>/qa_write.jsp"><input type="button" value="글작성"></a></div>
 						</article>
 
 					</div>
