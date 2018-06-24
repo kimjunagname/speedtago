@@ -176,6 +176,8 @@
         </div>
       </div>
     </section>
+    
+    
     <!-- Footer -->
 	<!-- -------------하단분리------------------------- -->
 	<%@ include file="/menu/bottom.jsp" %>
