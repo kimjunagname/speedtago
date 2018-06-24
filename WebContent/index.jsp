@@ -212,42 +212,42 @@
 		<div class="row gtr-200">
 			<section class="col-2 col-12-narrower">
 			<div class="box highlight">
-				<a href="<%=root%>/Reservation_reservation.jsp"><i class="icon major fa-paper-plane"></i></a>
+				<a href="<%=root%>/Reservation_reservation.jsp"><img src="./images/carem1.jpg" width="140px"></a>
 				<a href="<%=root%>/Reservation_reservation.jsp"><h3>예약 하기</h3></a>
 			</div>
 			</section>
 
 			<section class="col-2 col-12-narrower">
 			<div class="box highlight">
-				<a href="<%=root%>/Reservation_Guide.jsp"><i class="icon major fa-pencil"></i></a>
+				<a href="<%=root%>/Reservation_Guide.jsp"><img src="./images/carem2.jpg" width="140px"></a>
 				<a href="<%=root%>/Reservation_Guide.jsp"><h3>차량 이용 방법</h3></a>
 			</div>
 			</section>
 
 			<section class="col-2 col-12-narrower">
 			<div class="box highlight">
-				<a href="<%=root%>/qa_list.jsp"><i class="icon major fa-wrench"></i></a>
+				<a href="<%=root%>/qa_list.jsp"><img src="./images/carem3.jpg" width="140px"></a>
 				<a href="<%=root%>/qa_list.jsp"><h3>자주 묻는 질문</h3></a>
 			</div>
 			</section>
 
 			<section class="col-2 col-12-narrower">
 			<div class="box highlight">
-				<a href="<%=root%>/BF_info.jsp"><i class="icon major fa-wrench"></i></a>
+				<a href="<%=root%>/BF_info.jsp"><img src="./images/carem4.jpg" width="140px"></a>
 				<a href="<%=root%>/BF_info.jsp"><h3>여행 정보</h3></a>
 			</div>
 			</section>
 
 			<section class="col-2 col-12-narrower">
 			<div class="box highlight">
-				<a href="<%=root%>/speedtago_notice_list.jsp"><i class="icon major fa-wrench"></i></a>
+				<a href="<%=root%>/speedtago_notice_list.jsp"><img src="./images/carem5.jpg" width="140px"></a>
 				<a href="<%=root%>/speedtago_notice_list.jsp"><h3>공지사항</h3></a>
 			</div>
 			</section>
 
 			<section class="col-2 col-12-narrower">
 			<div class="box highlight">
-				<a href="#"><i class="icon major fa-wrench"></i></a>
+				<a href="#"><img src="./images/carem6.jpg" width="140px"></a>
 				<a href="#"><h3>실시간 상담</h3></a>
 			</div>
 			</section>
