@@ -25,7 +25,9 @@
 				<tr>
 					<td><a href="<%=root %>/qa/qa_list.jsp"><h4>자주묻는 질문</h4></a></td>
 				</tr>
-				
+				<tr>
+					<td><a href="<%=root %>/qa/qa_oneone_list.jsp"><h4>1:1상담</h4></a></td>
+				</tr>
 
 			</table>
 			</section>
