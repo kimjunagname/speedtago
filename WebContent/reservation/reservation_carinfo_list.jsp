@@ -38,11 +38,11 @@
 								<br>
 								<table class="type06">
 									<tr>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/photo1.jpg" width="150" height="100" /></a></td>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/d.jpg" width="150" height="100" /></a></td>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/photo2.jpg" width="150" height="100" /></a></td>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/photo3.jpg" width="150" height="100" /></a></td>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/photo4.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car1.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car2.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car3.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car4.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car1.jpg" width="150" height="100" /></a></td>
 									</tr>
 									<tr style="font-size: small;">
 										<td>소형차</td>
@@ -71,11 +71,11 @@
 								
 								<table class="type06">
 									<tr>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/photo1.jpg" width="150" height="100" /></a></td>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/d.jpg" width="150" height="100" /></a></td>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/photo2.jpg" width="150" height="100" /></a></td>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/photo3.jpg" width="150" height="100" /></a></td>
-										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/photo4.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car1.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car2.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car2.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car3.jpg" width="150" height="100" /></a></td>
+										<td><a href="<%=root%>/photo_read.jsp"><img src="<%=root%>/images/car4.jpg" width="150" height="100" /></a></td>
 									</tr>
 									<tr style="font-size: small;">
 										<td>글1</td>
