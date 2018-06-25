@@ -116,6 +116,7 @@
 					</div>
 					
 					<!-- table 선언 -->
+					<form name ="joinform" method="post" action="">
 					<table class="table table-striped" style="table-layout: fixed; width:800px; height: 15px;">
 						<!-- 컬럼 크기 조절 -->
 						<colgroup>
@@ -224,10 +225,11 @@
 						<tr>
 							<td align="left" colspan="2"><input type="button" value="가입" onclick="javascript:join();">
 							</td>
-							<td align="right" colspan="2"><input type="button" value="취소">
+							<td align="right" colspan="2"><input type="reset" value="취소" >
 							</td>
 						</tr>
 					</table>
+				</form>
 				</div>
 			</div>
 		</div>

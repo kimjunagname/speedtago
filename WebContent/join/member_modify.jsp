@@ -112,6 +112,7 @@
 					<div id="sidebar2">
 						<!-- Sidebar 2 -->
 					</div>
+					<form name ="joinform" method="post" action="">
 					
 					<!-- table 선언 -->
 					<table class="table table-striped" style="table-layout: fixed; width:800px; height: 15px;">
@@ -216,12 +217,13 @@
 							</td>
 						</tr>
 						<tr>
-							<td align="left" colspan="2"><input type="button" value="가입" onclick="javascript:join();">
+							<td align="left" colspan="2"><input type="button" value="수정" onclick="javascript:join();">
 							</td>
-							<td align="right" colspan="2"><input type="button" value="취소">
+							<td align="right" colspan="2"><input type="reset" value="취소">
 							</td>
 						</tr>
 					</table>
+				</form>
 				</div>
 			</div>
 		</div>

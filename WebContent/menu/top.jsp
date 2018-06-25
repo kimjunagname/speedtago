@@ -114,9 +114,9 @@
 <div class="navbar" id="header">
 	<!-- Logo -->
 	<div align="right">
-		 <em><a href="<%=root%>/login/login.jsp">로그인 |</em></a>
-		 <em><a href="<%=root %>/register.jsp">아이디/비밀번호 찾기|</em></a>
-		 <em><a href="<%=root%>/join/member.jsp">회원가입|</em></a>
+		 <em><a href="<%=root%>/user?act=mvlogin">로그인 |</em></a>
+		 <em><a href="<%=root%>/register.jsp">아이디/비밀번호 찾기|</em></a>
+		 <em><a href="<%=root%>/user?act=mvjoin">회원가입|</em></a>
 		 <em><a href="<%=root%>/mypage/mypage_modify.jsp">마이페이지</em></a>
 	</div>
 	
