@@ -33,27 +33,18 @@
 				<div class="col-10  col-12-narrower imp-narrower">
 					<div id="content">
 
-						<!-- Content -->
-						<article> 
+							<article> 
 						<header>
-						<h2>자주묻는 질문</h2>
+						<h2>1:1 상담</h2>
 						<hr style="border: solid 1px black;">
 						</header> 
 						<!--  게시판 작성 --> 
 						<br>
 
+			
 						<div>
-
-							<h4>자주묻는 질문 검색 ▶</h4>
-							<select>
-								<option value="보험사고">보험사고</option>
-								<option value="분실신고">분실신고</option>
-							</select> <select>
-								<option value="제목">제목</option>
-								<option value="내용">내용</option>
-							</select> <input type="text" style="" value="내용을 입력해주세요"> <br>
-						</div>
-						<div>
+						
+							<h4>상담 목록</h4>
 							<p>전체 1개 (1/1) 페이지</p>
 						</div>
 
@@ -91,46 +82,9 @@
 								<td class="even">5554</td>
 							</tr>
 
-							<tr style="border-bottom: solid 1px black;">
-								<td>1</td>
-								<td>보험사고</td>
-								<td><a href="<%=root %>/qa_read.jsp">고객님 사고접수는</a></td>
-								<td>2018.06.19</td>
-								<td>5554</td>
-							</tr>
-
-							<tr style="border-bottom: solid 1px black;">
-								<td class="even">1</td>
-								<td class="even">보험사고</td>
-								<td class="even"><a href="<%=root %>/qa_read.jsp">고객님 사고접수는</a></td>
-								<td class="even">2018.06.19</td>
-								<td class="even">5554</td>
-							</tr>
-
-							<tr style="border-bottom: solid 1px black;">
-								<td>1</td>
-								<td>보험사고</td>
-								<td><a href="<%=root %>/qa_read.jsp">고객님 사고접수는</a></td>
-								<td>2018.06.19</td>
-								<td>5554</td>
-							</tr>
-
-							<tr style="border-bottom: solid 1px black;">
-								<td class="even">1</td>
-								<td class="even">보험사고</td>
-								<td class="even"><a href="<%=root %>/qa_read.jsp">고객님 사고접수는</a></td>
-								<td class="even">2018.06.19</td>
-								<td class="even">5554</td>
-							</tr>
-
-							<tr style="border-bottom: solid 1px black;">
-								<td>1</td>
-								<td>보험사고</td>
-								<td><a href="<%=root %>/qa_read.jsp">고객님 사고접수는</a></td>
-								<td>2018.06.19</td>
-								<td>5554</td>
-							</tr>
+							
 						</table>
+						<div align="right"><a href="<%=root%>/qa_oneone_write.jsp"><input type="button" value="글작성"></a></div>
 						</article>
 
 					</div>
