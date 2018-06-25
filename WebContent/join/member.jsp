@@ -134,10 +134,9 @@
 								<input type="text" id="id" name="id" value="" size="12" style="text-align: left;">
 							</td>
 							
-							<td colspan="1">
+							<td>
 								<button type="button" class="btn btn-primary btn-sm" onkeyup="javascript:idcheck();">아이디 중복검사</button>
 							</td>
-						</tr>
 						</tr>
 
 						<tr>
@@ -157,20 +156,20 @@
 						<tr>
 							<td class="td1">휴대폰</td>
 							<td>
-								<select class="td3" id="id" name="tel1" value="" size="3" maxlength="3">
-									<option value="010">010</option>
-									<option value="011">011</option>
-									<option value="016">016</option>
-									<option value="017">017</option>
-									<option value="018">018</option>
+								<select class="td3" id="tel1" name="tel1" value="" size="1" maxlength="3" style="width:180px; height: 60px;">
+									<option value="010" >010</option>
+									<option value="011" >011</option>
+									<option value="016" >016</option>
+									<option value="017" >017</option>
+									<option value="018" >018</option>
 								</select> 
 							</td>
 							<td> 
-							   <input class="td3" type="text" name="tel2" value="" size="4" maxlength="4" >  
-							   </td>
-							   <td>
-							   <input class="td3" type="text" name="tel3" value="" size="4" maxlength="4" >
-								</td>
+							   <input class="td3" type="text" id="tel2" name="tel2" value="" size="4" maxlength="4" >  
+							</td>
+							<td>
+							   <input class="td3" type="text" id="tel3" name="tel3" value="" size="4" maxlength="4" >
+						 	</td>
 						</tr>
 						<tr>
 							<td>이메일</td>
@@ -180,7 +179,7 @@
 						</tr>
 
 						<tr>
-							<td>주소</td>
+							<td>우편번호</td>
 							<td colspan="2">
 								<input type="text" id="zipcode" name="zipcode" size="5"	maxlength="5" style="text-align: left;"	readonly="readonly" onclick="javascript:openzip();">
 							</td>
@@ -189,10 +188,35 @@
 								<button type="button" class="btn btn-primary btn-sm" onclick="javascript:sample4_execDaumPostcode();">우편번호 검색</button>
 							</td>
 						</tr>
+						
+						
+						<tr>
+							<td>주소</td>
+							<td colspan="3">
+								<input type="text" id="addr1" name="addr1" style="text-align: left; ">
+							</td>
+						</tr>
+						
 						<tr>
 							<td>상세주소</td>
 							<td colspan="3">
-								<input type="text" id="addr" name="addr" style="text-align: left; ">
+								<input type="text" id="addr2" name="addr2" style="text-align: left; ">
+							</td>
+						</tr>
+						
+						<tr>
+							<td>이메일</td>
+							<td >
+								<input type="text" name="email1" id="email1" style="width:300px;">
+							</td>
+							<td>
+								<font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@</font>
+							</td>
+							<td colspan="2">
+								<select name="email2" id ="email2" size="1" style="width:180px; height:60px;">
+									<option value="naver.com">naver.com</option>
+									<option value="hanmail.net">hanmail.net</option>
+								</select>
 							</td>
 						</tr>
 						<tr>
