@@ -1,4 +1,4 @@
-package com.speedtago.carinfor.service;
+package com.speedtago.carinfo.service;
 
 public interface CarinforService {
 

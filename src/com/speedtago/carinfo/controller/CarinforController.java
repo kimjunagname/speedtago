@@ -1,4 +1,4 @@
-package com.speedtago.car.controller;
+package com.speedtago.carinfo.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/car")
-public class CarController extends HttpServlet {
+@WebServlet("/carinfor")
+public class CarinforController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	
 	public void init() {
 		//adminService = new AdminServiceImpl();
 	}

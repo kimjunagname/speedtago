@@ -84,7 +84,7 @@
 
 							
 						</table>
-						<div align="right"><a href="<%=root%>/qa_oneone_write.jsp"><input type="button" value="글작성"></a></div>
+						<div align="right"><a href="<%=root%>/qa/qa_oneone_write.jsp"><input type="button" value="글작성"></a></div>
 						</article>
 
 					</div>
