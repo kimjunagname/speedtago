@@ -1,5 +1,9 @@
 package com.speedtago.carreservation.dao;
 
+import java.util.List;
+
+import com.speedtago.member.model.MemberDetailDto;
+
 public class CarReservationDaoImpl implements CarReservationDao {
 
 	@Override
