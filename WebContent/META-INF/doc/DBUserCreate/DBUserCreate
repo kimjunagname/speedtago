@@ -1,0 +1,35 @@
+1. cmd 실행
+2. 시스템 계정 접속
+------------------------
+sqlplus "/as sysdba"
+시스템 계정: sys, system, sysdba 중 1택
+pwd: kitri
+------------------------
+
+3. 계정 생성
+------------------------
+create user speedtago
+identified by speedtago
+default tablespace users
+temporary tablespace temp;
+
+grant connect, resource to speedtago;
+
+create user pjt2
+identified by pjt2
+default tablespace users
+temporary tablespace temp;
+
+grant connect, resource to pjt2;
+
+conn speedtago
+pwd: speedtago
+로 접속 되는지 확인
+
+select * from tab;
+테이블 없는것 확인
+
+sqldeveloper실행 후
+새접속 만들기 > 접속명 : speedtago, ID/PWD > speedtago/speedtago
+
+접속 확인

@@ -51,7 +51,7 @@
 
 						<div align="center">
 							<input type="button" value="등록">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="<%=root%>/qa_oneone_list.jsp"><input type="button"
+							<a href="<%=root%>/qa/qa_oneone_list.jsp"><input type="button"
 								value="취소"></a>
 						</div>
 						</article>
