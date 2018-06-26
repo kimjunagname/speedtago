@@ -35,4 +35,3 @@ MemberDto memberDto = (MemberDto) session.getAttribute("userInfo");
 	</script>
 <%
   }
-%>
