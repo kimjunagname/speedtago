@@ -117,9 +117,9 @@ public class MemberController extends HttpServlet {
 				////////////////////////////////////////////////////////////////
 //				request.setAttribute("userInfo", memberDto);
 				
-				PageMove.redirect(request, response, "/login/loginok.jsp");
+				PageMove.redirect(request, response, "/login/login_ok.jsp");
 			} else {
-				PageMove.redirect(request, response, "/login/loginfail.jsp");
+				PageMove.redirect(request, response, "/login/login_fail.jsp");
 			}
 		} else if("logout".equals(act)) {
 			HttpSession session = request.getSession();
