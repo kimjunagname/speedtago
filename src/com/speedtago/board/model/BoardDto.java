@@ -6,13 +6,17 @@ public class BoardDto {
 	private String board_name;
 	private int board_hit;
 	private String board_content;
+	private String board_date;
 	private String id;
+	
+	
+	public String getBoard_date() {
+		return board_date;
+	}
 	public int getBoard_id() {
 		return board_id;
 	}
-	public void setBoard_id(int board_id) {
-		this.board_id = board_id;
-	}
+
 	public String getBoard_name() {
 		return board_name;
 	}

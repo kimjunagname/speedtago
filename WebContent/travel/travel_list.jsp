@@ -101,7 +101,7 @@
 				</table>
 
 				<div align="right">
-					<a href="<%=root%>/travel_write.jsp"><input type="button"
+					<a href="<%=root%>/travel/travel_write.jsp"><input type="button"
 						value="글작성"></a>
 				</div>
 

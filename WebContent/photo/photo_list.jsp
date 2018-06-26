@@ -102,7 +102,7 @@
 									</tr>
 
 								</table>
-								<div align="right"><a href="#"><input type="button" value="글작성"></a></div>
+								<div align="right"><a href="<%=root%>/photo/photo_write.jsp"><input type="button" value="글작성"></a></div>
 
 
 							</article>

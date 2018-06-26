@@ -21,15 +21,21 @@
 				<h2>여행후기 작성</h2>
 				<hr style="border: solid 1px black;">
 				</header> <!--  게시판 작성 --> <br>
-
+				
+				<form name="treviewform" method="post" action="">
+				<input type="hidden" name="act" value="traviewwrite">
 				<table>
 					<tr>
 						<td>제목</td>
-						<td colspan="2"><input type="text" value="내용을 입력해주세요"></td>
+						<td colspan="2"><input type="text" value="내용을 입력해주세요" id="tvsubject" name="tvsubject"></td>
+					</tr>
+					<tr>
+						<td>지역</td>
+						<td colspan="2"><input type="text" value="지역을 입력해주세요" id="tvlocation" name="tvlocation"></td>
 					</tr>
 					<tr>
 						<td>내용</td>
-						<td colspan="2"><textarea rows="20" cols="10">내용을 입력해주세요.</textarea></td>
+						<td colspan="2"><textarea  name="content" id="content" class="summernote" >내용을 입력해주세요.</textarea></td>
 					</tr>
 					<tr>
 						<td>파일첨부</td>
@@ -37,11 +43,12 @@
 						<td><input type="button" value="찾아보기"></td>
 					</tr>
 				</table>
+				</form>
 				<br>
 
 				<div align="center">
-					<input type="button" value="등록">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="<%=root%>/RP_info.jsp"><input type="button" value="취소"></a>
+					<input type="button" value="등록" onclick="javascript:checktravel();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="<%=root%>/treview/treview_list.jsp"><input type="button" value="취소"></a>
 				</div>
 				</article>
 
@@ -64,8 +71,36 @@
 	</div>
 	</div>
 	</section>
+<script type="text/javascript">
+function checktravel(){
+	if(document.getElementById("tsubject").value == ""){
+		alert("제목을 입력해주세요.");
+		return;
+	}else{
+		document.travelform.action="<%=root%>/mvtravel";
+		document.travelform.submit();
+	}
+}
+</script>
+<script src="<%=root%>/assets/plugins/summernote/summernote.js"></script>
+<!-- summer note korean language pack -->
+<script src="<%=root%>/assets/plugins/summernote/lang/summernote-ko-KR.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $('.summernote').summernote({
+      height: 300,          // 기본 높이값
+      minHeight: null,      // 최소 높이값(null은 제한 없음)
+      maxHeight: null,      // 최대 높이값(null은 제한 없음)
+      focus: true,          // 페이지가 열릴때 포커스를 지정함
+      lang: 'ko-KR'         // 한국어 지정(기본값은 en-US)
+    });
+  });
+</script>
+	
 
 	<!-- Footer -->
 	<!-- -------------하단분리------------------------- -->
-	<%@ include file="/menu/bottom.jsp" %>
+		</body>
+		</html>
 	<!-- -------------------------------------------- -->

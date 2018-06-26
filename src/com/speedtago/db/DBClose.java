@@ -1,21 +1,61 @@
 package com.speedtago.db;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DBClose {
-	public static void close(Connection conn, Statement stmt) {
+	public static void close(Connection conn, Statement stmt, ResultSet rs) {
 		try {
-			if(stmt != null)
+			if (rs != null)
+				rs.close();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+		try {
+			if (stmt != null)
 				stmt.close();
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		try {
-			if(conn != null)
+			if (conn != null)
+				conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void close(Connection conn, Statement stmt) {
+		try {
+			if (stmt != null)
+				stmt.close();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		try {
+			if (conn != null)
+				conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void close(Connection conn, PreparedStatement pstmt, ResultSet rs) {
+		try {
+			if (rs != null)
+				rs.close();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+		try {
+			if (pstmt != null)
+				pstmt.close();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		try {
+			if (conn != null)
 				conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -24,55 +64,14 @@ public class DBClose {
 	
 	public static void close(Connection conn, PreparedStatement pstmt) {
 		try {
-			if(pstmt != null)
+			if (pstmt != null)
 				pstmt.close();
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		try {
-			if(conn != null)
-				conn.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public static void close(Connection conn, Statement stmt, ResultSet rs) {
-		try {
-			if(rs != null)
-				rs.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		try {
-			if(stmt != null)
-				stmt.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		try {
-			if(conn != null)
-				conn.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public static void close(Connection conn, PreparedStatement pstmt, ResultSet rs) {
-		try {
-			if(rs != null)
-				rs.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		try {
-			if(pstmt != null)
-				pstmt.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		try {
-			if(conn != null)
+			if (conn != null)
 				conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();

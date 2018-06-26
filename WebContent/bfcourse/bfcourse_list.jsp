@@ -117,7 +117,7 @@
 							</tr>
 						</table>
 						
-						<div align="right"><a href="<%=root%>/bfcourse_write.jsp"><input type="button" value="글작성"></a></div>
+						<div align="right"><a href="<%=root%>/bfcourse/bfcourse_write.jsp"><input type="button" value="글작성"></a></div>
 						</article>
 
 					</div>

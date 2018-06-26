@@ -98,7 +98,7 @@
 
 				</table>
 				<div align="right">
-					<a href="<%=root%>/video_write.jsp"><input type="button"
+					<a href="<%=root%>/video/video_write.jsp"><input type="button"
 						value="글작성"></a>
 				</div>
 

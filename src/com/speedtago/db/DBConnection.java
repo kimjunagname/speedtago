@@ -1,21 +1,19 @@
 package com.speedtago.db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DBConnection {
 	static {
-		try { 
+		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-	}
-
-	public static Connection makeConnection() throws SQLException {
+	} //static block 초기화 ---> 처음에 객체 호출될때 한번만 실행됨
+	
+	public static Connection makeDBConnection() throws SQLException {
 		Connection conn = null;
-		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "speedtago", "speedtago");
-		return conn; 					  
+		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "speedtago", "speedtago");
+		return conn;
 	}
 }
