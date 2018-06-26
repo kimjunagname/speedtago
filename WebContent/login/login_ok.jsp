@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="com.kitri.member.model.MemberDto"%>
+    pageEncoding="UTF-8" import="com.speedtago.member.model.MemberDto"%>
 
 <%
 String root = request.getContextPath();
@@ -35,3 +35,4 @@ MemberDto memberDto = (MemberDto) session.getAttribute("userInfo");
 	</script>
 <%
   }
+%>
