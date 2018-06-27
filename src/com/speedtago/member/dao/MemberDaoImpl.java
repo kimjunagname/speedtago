@@ -15,7 +15,7 @@ public class MemberDaoImpl implements MemberDao {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			conn = DBConnection.makeConnection();
+			conn = DBConnection.makeDBConnection();
 			String sql = "";
 			sql += "select count(id) cnt \n";
 			sql += "from member \n";
@@ -45,7 +45,7 @@ public class MemberDaoImpl implements MemberDao {
 			String sido = "";
 			String gugun = "";
 			String doro = "";
-			conn = DBConnection.makeConnection();
+			conn = DBConnection.makeDBConnection();
 			String sql = "";
 			sql+="select zipcode, sido || ' ' || gugun || ' ' || doro as address \n";
 			sql+="from zipcode \n";
@@ -77,7 +77,7 @@ public class MemberDaoImpl implements MemberDao {
 		PreparedStatement pstmt = null;
 		try {
 			// DB연결 및 SQL문 입력 및 실행	
-			conn = DBConnection.makeConnection();
+			conn = DBConnection.makeDBConnection();
 			String sql = "";
 			sql += "insert all \n";
 			sql += "into member (name, id, pass, email1, email2, joindate) \n";
@@ -123,7 +123,7 @@ public class MemberDaoImpl implements MemberDao {
 		ResultSet rs = null;
 		
 		try {
-			conn = DBConnection.makeConnection();
+			conn = DBConnection.makeDBConnection();
 			String sql = "";
 			sql += " select member.name, member.id, member.pass, member.email1, member.email2, member.joindate, MEMBER_DETAIL.zipcode, MEMBER_DETAIL.addr1, MEMBER_DETAIL.addr2, MEMBER_DETAIL.tel1, MEMBER_DETAIL.tel2, MEMBER_DETAIL.tel3 \n ";
 			sql += " from member, MEMBER_DETAIL \n ";
@@ -200,7 +200,7 @@ public class MemberDaoImpl implements MemberDao {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			conn = DBConnection.makeConnection();
+			conn = DBConnection.makeDBConnection();
 			String sql = "";
 			sql+="select id, name, email1, email2 \n";
 			sql+="from member \n";
