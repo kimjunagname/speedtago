@@ -52,7 +52,7 @@ function pageBack(){
 		<form name="loginform" method="post" action="">
 		<input type="hidden" name="act" value="login">
 			<p>ID</p>
-			<input type="text" name="id" id="id">
+			<input type="text" name="id" id="id" placeholder="id 입력">
 
 			<p>비밀번호</p>
 			<input type="password" name="pass" id="pass"> 

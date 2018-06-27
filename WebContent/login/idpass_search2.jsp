@@ -1,26 +1,45 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-
-		<!-- Header -->
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) 캐러쉘 디자인 사용하려면 반드시 들어가야 합니다. -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link href="/speedtago/assets/css/main.css" rel="stylesheet"
+	type="text/css">
+<title>빨리타카 | 아이디 비밀번호 찾기</title>
+</head>
+<body>
+<body class="is-preload">
+  <div id="page-wrapper">
+    <!-- Header -->
 		<!-- ---------------상단 고정-------------------- -->
-		<%@ include file="/menu/top.jsp" %>
+		<%@ include file="/menu/top.jsp"%>
 		<!-- ----------------------------------------- -->
-		<br> <br> <br> <br> <br> <br> <br>
-		<br> <br> <br>
-		<!-- 왼쪽 사이트 바 시작 [범위: 2]----------------------------------------------------- -->
-		<!-- Main -->
-		<section class="wrapper style1">
-		<div class="container">
-			<div class="row gtr-200">
-				<!-- 왼쪽 사이트 바 범위 조절[범위: 2]  <div class="col-2 col-12-narrower"> ----------------------------------------------------- -->
-				<!-- ---------------left 고정-------------------- -->
-				<jsp:include page="/menu/left_qa.jsp" flush='false' />
-				<!-- ----------------------------------------- -->
-				<!-- 왼쪽 사이트 바 종료----------------------------------------------------- -->
-
-				<!-- 내용 시작 [범위: 10]----------------------------------------------------- -->
-				    <!-- Main -->
-    
+		<br> 
+		<br> 
+		<br> 
+		<br> 
+		<br> 
+		<br> 
+		<br>
+		<br> 
+		<br> 
+		<br>
+    <!-- Main -->
+    <section class="wrapper style1">
+    <div class="container">
+      <div class="row gtr-200">
         <div class="col-3 col-12-narrower">
           <div id="sidebar1">
             <!-- Sidebar 1 -->
@@ -87,24 +106,8 @@
         </div>
       </div>
     </section>
-				<!-- 내용 종료 [범위: 10]----------------------------------------------------- -->
-
-			</div>
-		</div>
-		</section>
-
-		<div class="col-3 col-12-narrower">
-			<div id="sidebar2">
-
-				<!-- Sidebar 2 -->
-
-			</div>
-		</div>
-	</div>
-	</div>
-	</section>
-
-	<!-- Footer -->
+    
+    <!-- Footer -->
 	<!-- -------------하단분리------------------------- -->
-	<%@ include file="/menu/bottom.jsp" %>
+	<%@ include file="/menu/bottom.jsp"%>
 	<!-- -------------------------------------------- -->

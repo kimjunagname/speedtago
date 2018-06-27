@@ -131,12 +131,12 @@
 						
 						<tr>
 							<td>이름</td>
-							<td colspan="3"><input type="text" id="name" name="name" value="" size="12"></td>
+							<td colspan="3"><input type="text" id="name" name="name" value="" size="12" placeholder="이름을 입력해 주세요"></td>
 						</tr>
 						<tr>
 							<td>아이디</td>
 							<td colspan="2">
-								<input type="text" id="id" name="id" value="" size="12" style="text-align: left;" onkeyup="javascript:idcheck();">
+								<input type="text" id="id" name="id" value="" size="12" style="text-align: left;" placeholder="id를 입력해 주세요" onkeyup="javascript:idcheck();">
 							    
 							</td>
 							
@@ -149,14 +149,14 @@
 						<tr>
 							<td>비밀번호</td>
 							<td colspan="3">
-								<input type="password" id="pass" name="pass" size="12" maxlength="12"style="text-align: left;">
+								<input type="password" id="pass" name="pass" size="12" placeholder="비밀번호를 입력해 주세요." maxlength="12"style="text-align: left;">
 							</td>
 						</tr>
 						
 						<tr>
 							<td>비밀번호 확인</td>
 							<td colspan="3">
-								<input type="password" id="passcheck" name="passcheck" id="passcheck" size="12" maxlength="12" style="text-align: left;">
+								<input type="password" id="passcheck" name="passcheck" id="passcheck" size="12" maxlength="12" placeholder="비밀번호를 확인해주세요." style="text-align: left;">
 							</td>
 						</tr>
 
@@ -209,7 +209,7 @@
 						<tr>
 							<td>이메일</td>
 							<td >
-								<input type="text" name="email1" id="email1" style="width:300px;">
+								<input type="text" name="email1" id="email1" placeholder="이메일을 입력해 주세요" style="width:300px;">
 							</td>
 							<td>
 								<font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@</font>
