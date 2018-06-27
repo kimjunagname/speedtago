@@ -78,7 +78,7 @@
 				</table>
 
 				<div align="right">
-					<a href="<%=root%>/treview_write.jsp"><input type="button"
+					<a href="<%=root%>/treview/treview_write.jsp"><input type="button"
 						value="글작성"></a>
 				</div>
 
