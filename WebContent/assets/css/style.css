@@ -62,7 +62,7 @@ h1{
     font-size: 18px;
     border-radius: 20px;
 }
-.login-box input[type="button"]
+.cancel
 {
     border: none;
     outline: none;
@@ -72,6 +72,18 @@ h1{
     font-size: 18px;
     border-radius: 20px;
 }
+
+.login-box input[type="reset"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
 
 .login-box input[type="submit"]:hover
 {

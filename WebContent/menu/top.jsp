@@ -35,70 +35,8 @@
          interval : 1000
       });
    });
+   </script>   
    
-////////////////////////////javascript 선언//////////////////////////
-//join - member_modify, member_write에 사용됨
-//id 중복 체크, name null 값 확인, pass 비밀번호 일치 체크 함수
-   function join(){
-   	if(cnt != 0) {
-   		alert("아이디 확인!");
-   		return;
-   	} else if(document.getElementById("name").value == "") {
-   		alert("이름 입력!");
-   		return;
-   	} else if(document.getElementById("pass").value  == "") {
-   		alert("비밀번호 입력!");
-   		return;
-   	} else if(document.getElementById("pass").value != document.getElementById("passcheck").value) {
-   		alert("비밀번호 확인!");
-   		return;
-   	} else {
-   		document.joinform.action = "<%=root%>/user";
-   		document.joinform.submit();
-   	}
-   }
-
-//주소록 검색 함수
-   function openzip(){
-   	window.open("<%=root%>/user?act=mvzip","zip","top=200, left=300, width=400, height=300, menubar=no, status=no, toolbar=no, location=no, scrollbars=yes");
-   }
-
-   var view;
-   var id;
-   var cnt = 1;
-   function idcheck() {
-   	view = document.getElementById("idresult");
-   	
-   	id = document.getElementById("id").value;
-   	if(id.length < 5 || id.length > 16) {
-   		view.innerHTML = "아이디는 5자이상 16자이하입니다.";
-   		return;
-   	}
-   	var params = "act=idsearch&id=" + id;
-   	sendRequest("<%=root%>/user", params, idresult, "GET");
-   }
-
-//ajax를 통한 id중복 실시간 확인
-   function idresult() {
-   	if(httpRequest.readyState == 4) {//처리완료
-   		if(httpRequest.status == 200) {
-   			cnt = httpRequest.responseText;
-   			if(cnt == 0) {
-   				view.innerHTML = '<font color="blue"><b>' + id + '</b>는 사용 가능합니다.</font>';
-   			} else {
-   				view.innerHTML = '<font color="red"><b>' + id + '</b>는 사용중입니다.</font>';
-   			}
-   		} else {
-   			alert("처리중 문제발생");
-   		}
-   	}
-   }
-   
-   
-   
-   
-</script>
-<!-- ////////////////////////////javascript 선언종료////////////////////////// -->
 
 </head>
 

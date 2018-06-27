@@ -33,9 +33,15 @@ public class MemberController extends HttpServlet {
 		
 		if("mvjoin".equals(act)) {
 			PageMove.redirect(request, response, "/join/member_write.jsp");
+			//top.jsp -> 회원 가입 -> mvjoin >> member_write.jsp 이동
+			
 		} else if("mvlogin".equals(act)) {
 			PageMove.redirect(request, response, "/login/login.jsp");
+			//top.jsp -> 회원 가입 -> mvjoin >> member_write.jsp 이동
+			
 		} else if("idsearch".equals(act)) {
+			//member_write.jsp -> 아이디 찾기 -> idsearch >> 사용 가능, 불가 알려주기
+			
 			String id = request.getParameter("id");
 			System.out.println("검색 아이디 : " + id);
 			int cnt = memberService.idCheck(id);
@@ -43,8 +49,10 @@ public class MemberController extends HttpServlet {
 			response.setContentType("text/plain;charset=UTF-8");
 			PrintWriter out = response.getWriter();
 			out.print(cnt);
+			
 		} else if("mvzip".equals(act)) {
 			PageMove.redirect(request, response, "/join/zipsearch.jsp");
+			
 		} else if("zipsearch".equals(act)) {
 			String dong = request.getParameter("dong");
 			System.out.println("검색 동이름 : " + dong);
@@ -55,6 +63,7 @@ public class MemberController extends HttpServlet {
 			
 			PageMove.forward(request, response, "/join/zipsearch.jsp");
 		} else if("register".equals(act)) {
+			//member_write.jsp -> 회원가입 -> register >> 성공시: /join/register_ok.jsp 이동 // 실패시: /join/register_fail.jsp 이동 
 			MemberDetailDto memberDetailDto = new MemberDetailDto();
 			memberDetailDto.setId(request.getParameter("id"));
 			memberDetailDto.setName(request.getParameter("name"));
@@ -72,9 +81,9 @@ public class MemberController extends HttpServlet {
 			if(cnt != 0) {//성공.
 				request.setAttribute("userInfo", memberDetailDto);
 				
-				PageMove.forward(request, response, "/join/registerok.jsp");
+				PageMove.forward(request, response, "/join/register_ok.jsp");
 			} else {
-				PageMove.redirect(request, response, "/join/registerfail.jsp");
+				PageMove.redirect(request, response, "/join/register_fail.jsp");
 			}
 			
 		} else if("login".equals(act)) {
@@ -117,7 +126,7 @@ public class MemberController extends HttpServlet {
 				////////////////////////////////////////////////////////////////
 //				request.setAttribute("userInfo", memberDto);
 				
-				PageMove.redirect(request, response, "/login/login_ok.jsp");
+				PageMove.redirect(request, response, "/index.jsp");
 			} else {
 				PageMove.redirect(request, response, "/login/login_fail.jsp");
 			}
@@ -138,6 +147,8 @@ public class MemberController extends HttpServlet {
 			
 			request.setAttribute("maillist", mail);
 			PageMove.forward(request, response, "/mail/list.jsp");
+		}else if("mvindex".equals(act)) {
+			PageMove.redirect(request, response, "/index.jsp");
 		} else {
 			PageMove.redirect(request, response, "/index.jsp");
 		}

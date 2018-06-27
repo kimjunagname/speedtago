@@ -39,6 +39,10 @@ function logincheck(){
 function joinmove(){
 	document.location.href = "<%=root%>/user?act=mvjoin";
   }
+function pageBack(){
+	document.location.href = "<%=root%>/user?act=mvindex";
+	//history.back();
+  }  
 </script>
 </head>
 <body>
@@ -52,8 +56,8 @@ function joinmove(){
 
 			<p>비밀번호</p>
 			<input type="password" name="pass" id="pass"> 
-			<input type="button" name="login" value="로그인" onclick="javascript:logincheck();">
-			<input type="button" name="cancel" value="취소">
+			<input type="button" name="login" id="login" value="로그인" onclick="javascript:logincheck();">
+			<input type="button" name="cancel" id="cancel" value="취소" onclick="javascript:pageBack();">
 			
 			<table>
 				<tr>
@@ -61,8 +65,8 @@ function joinmove(){
 					<td>아이디 저장</td>
 				</tr>
 			</table>
-			<a href="#">아이디,비밀번호를 잊으셨습니까?</a><br> 
-			<a href="#">아직 회원이 아니십니까?</a>
+			<a href="#" ">아이디,비밀번호를 잊으셨습니까?</a><br> 
+			<a href="#" onclick="javascript:joinmove();">아직 회원이 아니십니까?</a>
 		</form>
 	</div>
 </body>

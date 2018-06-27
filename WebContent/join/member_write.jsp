@@ -117,6 +117,8 @@
 					
 					<!-- table 선언 -->
 					<form name ="joinform" method="post" action="">
+					<input type="hidden" name="act" value="register">
+	 
 					<table class="table table-striped" style="table-layout: fixed; width:800px; height: 15px;">
 						<!-- 컬럼 크기 조절 -->
 						<colgroup>
@@ -134,11 +136,13 @@
 						<tr>
 							<td>아이디</td>
 							<td colspan="2">
-								<input type="text" id="id" name="id" value="" size="12" style="text-align: left;">
+								<input type="text" id="id" name="id" value="" size="12" style="text-align: left;" onkeyup="javascript:idcheck();">
+							    
 							</td>
 							
 							<td>
-								<button type="button" class="btn btn-primary btn-sm" onkeyup="javascript:idcheck();">아이디 중복검사</button>
+							   <span id="idresult"></span>
+								<!-- <button type="button" class="btn btn-primary btn-sm" onkeyup="javascript:idcheck();">아이디 중복검사</button>  -->
 							</td>
 						</tr>
 
@@ -157,7 +161,7 @@
 						</tr>
 
 						<tr>
-							<td class="td1">휴대폰</td>
+							<td class="td1">연락처</td>
 							<td>
 								<select class="td3" id="tel1" name="tel1" value="" size="1" maxlength="3" style="width:180px; height: 60px;">
 									<option value="010" >010</option>
@@ -174,12 +178,7 @@
 							   <input class="td3" type="text" id="tel3" name="tel3" value="" size="4" maxlength="4" >
 						 	</td>
 						</tr>
-						<tr>
-							<td>이메일</td>
-							<td colspan="3">
-								<input type="text" id="mail" name="mail" style="text-align: left;">
-							</td>
-						</tr>
+						
 
 						<tr>
 							<td>우편번호</td>
@@ -234,6 +233,70 @@
 			</div>
 		</div>
 </section>
+
+  
+<script type="text/javascript" src="<%=root%>/assets/js/httpRequest.js"></script>   
+<script type="text/javascript">   
+////////////////////////////javascript 선언//////////////////////////
+//join - member_modify, member_write에 사용됨
+//id 중복 체크, name null 값 확인, pass 비밀번호 일치 체크 함수
+   function join(){
+   	if(cnt != 0) {
+   		alert("아이디 확인!");
+   		return;
+   	} else if(document.getElementById("name").value == "") {
+   		alert("이름 입력!");
+   		return;
+   	} else if(document.getElementById("pass").value  == "") {
+   		alert("비밀번호 입력!");
+   		return;
+   	} else if(document.getElementById("pass").value != document.getElementById("passcheck").value) {
+   		alert("비밀번호 확인!");
+   		return;
+   	} else {
+   		document.joinform.action = "<%=root%>/user";
+   		document.joinform.submit();
+   	}
+   }
+
+//주소록 검색 함수
+   function openzip(){
+   	window.open("<%=root%>/user?act=mvzip","zip","top=200, left=300, width=400, height=300, menubar=no, status=no, toolbar=no, location=no, scrollbars=yes");
+   }
+
+   var view;
+   var id;
+   var cnt = 1;
+   var size;
+   function idcheck() {
+   	view = document.getElementById("idresult");
+   	id = document.getElementById("id").value;
+   	if(id.length < 5 || id.length > 16) {
+   		view.innerHTML = "아이디는 5자이상 16자이하입니다.";
+   		return;
+   	}
+   	var params = "act=idsearch&id=" + id;
+   	sendRequest("<%=root%>/user", params, idresult, "GET");
+   }
+
+//ajax를 통한 id중복 실시간 확인
+   function idresult() {
+   	if(httpRequest.readyState == 4) {//처리완료
+   		if(httpRequest.status == 200) {
+   			cnt = httpRequest.responseText;
+   			if(cnt == 0) {
+   				view.innerHTML = '<font color="blue"><b>' + id + '</b>는</br> 사용 가능합니다.</font>';
+   			} else {
+   				view.innerHTML = '<font color="red"><b>' + id + '</b>는</br> 사용중입니다.</font>';
+   			}
+   		} else {
+   			alert("처리중 문제발생");
+   		}
+   	}
+   }
+
+</script>
+<!-- ////////////////////////////javascript 선언종료////////////////////////// -->
 
 
 
